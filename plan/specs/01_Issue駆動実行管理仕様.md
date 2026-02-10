@@ -46,11 +46,27 @@ GitHub Issue を Source of Truth とし、重複実行なく Run を開始・進
 
 - `agent:retry` ラベル付与または `/retry` コメントで再実行可能。
 - v0.2 はクリーンスタートを既定とし、旧 Run の中間状態を引き継がない。
+- 実行権限:
+  - `write` 以上の権限を持つメンバー
+  - runner サービスアカウント
+- 権限不足の `/retry` は無視し、理由を Issue コメントで返す。
 
 ### FR-105 Give-up
 
 - 1 Issue あたりの最大リトライ回数を設定値で管理（初期値 5）。
 - 上限超過時は自動再試行せず `agent:blocked` へ遷移する。
+
+### FR-106 Blocked復帰手順（v0.2確定）
+
+- 手順:
+  1. 実行停止理由を `blocked_reason` として Issue コメントに記録
+  2. 人間が対応方針を Issue コメントで明示
+  3. `agent:retry` ラベル、または `/retry` で再実行要求
+  4. 新 `run_id` を採番し、クリーンスタートで再実行
+- 復帰期限:
+  - `agent:blocked` 遷移から 24時間以内に一次判断（再実行/中止）を行う
+- `completed` 扱い:
+  - v0.2では `agent:done` ラベルは導入せず、完了は PR/Issue の状態で管理する
 
 ## 5. 非機能要件
 
@@ -92,6 +108,4 @@ GitHub Issue を Source of Truth とし、重複実行なく Run を開始・進
 
 ## 10. 未決事項
 
-- `completed` 状態をラベル化するか（例: `agent:done`）。
-- `retry` 実行権限（誰の操作を受理するか）。
-- `/retry` コメントの認可方式（GitHub ロール連携要否）。
+- なし（v0.2範囲で確定済み）。
