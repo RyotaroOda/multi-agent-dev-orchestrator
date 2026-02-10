@@ -44,6 +44,9 @@
   - 異常系: `blocked -> retry -> running` で新 `run_id` に切り替わる。
 - 関連リスク:
   - `R-002`, `R-012`, `R-015`
+- DoRレビュー結果（2026-02-10）:
+  - 充足（不足追記なし）
+  - 記録: https://github.com/RyotaroOda/multi-agent-dev-orchestrator/issues/5#issuecomment-3878245474
 
 ### DEV-002 例外ラベル検証と品質ゲート判定の連動
 
