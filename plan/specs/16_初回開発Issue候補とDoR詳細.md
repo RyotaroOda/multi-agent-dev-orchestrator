@@ -66,6 +66,9 @@
   - 異常系: ルールエンジン失敗時に fail-closed で `blocked` になる。
 - 関連リスク:
   - `R-003`, `R-005`, `R-015`
+- DoRレビュー結果（2026-02-10）:
+  - 充足（不足追記なし）
+  - 記録: https://github.com/RyotaroOda/multi-agent-dev-orchestrator/issues/6#issuecomment-3878261847
 
 ### DEV-003 成果物完全性検証とGitHub App PR作成の接続
 
@@ -85,6 +88,9 @@
   - 異常系: token発行失敗継続で `blocked` と手動対応要求を出力。
 - 関連リスク:
   - `R-006`, `R-014`, `R-015`
+- DoRレビュー結果（2026-02-10）:
+  - 充足（不足追記なし）
+  - 記録: https://github.com/RyotaroOda/multi-agent-dev-orchestrator/issues/7#issuecomment-3878271138
 
 ## 6. 推奨着手順
 
