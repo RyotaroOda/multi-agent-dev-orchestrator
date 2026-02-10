@@ -9,6 +9,7 @@
 5. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/リスク登録簿.md`
 6. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/意思決定ログ.md`
 7. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/specs/README.md`
+8. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/GitHub App導入実行手順.md`
 8. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/Issueテンプレート_v0.2.md`
 9. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/M4_Go-No-Goチェックリスト.md`
 10. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/specs/12_M4本判定と開発着手条件仕様.md`
