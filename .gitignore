@@ -1,0 +1,6 @@
+# Local-only records for GitHub App credentials/settings
+plan/templates/GitHub App設定値記録.local.md
+
+# Optional local env files for App auth
+.env.github-app
+.env.local
