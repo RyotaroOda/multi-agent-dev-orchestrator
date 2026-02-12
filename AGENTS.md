@@ -26,6 +26,9 @@
 - 共有台帳（`plan/意思決定ログ.md` / `plan/バックログ.md` / `plan/リスク登録簿.md`）の更新担当を事前に決める
 - 台帳更新は `pull/rebase -> 追記 -> push` を短サイクルで実施し、競合を最小化する
 - 台帳を更新したセッションは、同日中に他セッションへ更新要点（更新ファイル・ID・要約）を共有する
+- GitHub操作（PR作成/更新、Issueコメント、PR close）は `multi-agent-orchestrator-bot`（GitHub App）を標準主体とする
+- `gh` のデフォルトユーザー認証を常用しない。`installation token` を都度発行し、`GH_TOKEN` 指定で実行する
+- 人アカウントでのGitHub書き込みは非常時のみ許可し、理由を `plan/意思決定ログ.md` に記録する
 
 ## 企画タスクの出力フォーマット
 
