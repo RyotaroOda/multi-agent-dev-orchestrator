@@ -55,6 +55,7 @@ GitHub Issue を Source of Truth とし、重複実行なく Run を開始・進
 
 - 1 Issue あたりの最大リトライ回数を設定値で管理（初期値 5）。
 - 上限超過時は自動再試行せず `agent:blocked` へ遷移する。
+- `blocked_reason` は `retry_condition_unmet` を使用する。
 
 ### FR-106 Blocked復帰手順（v0.2確定）
 
@@ -82,7 +83,7 @@ GitHub Issue を Source of Truth とし、重複実行なく Run を開始・進
 
 ### 出力
 
-- Run Header コメント（YAML/JSON）
+- Run Header コメント（JSON固定）
 - Task/Stage 終了ログコメント（構造化）
 - ラベル更新
 
