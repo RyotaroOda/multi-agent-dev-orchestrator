@@ -19,8 +19,9 @@
 15. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/specs/16_初回開発Issue候補とDoR詳細.md`
 16. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/specs/17_初回開発着手ハンドオーバー仕様.md`
 17. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/specs/18_DEV-001状態遷移と復帰契約仕様.md`
-18. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/M4本判定会_記録テンプレート.md`
-19. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/M4本判定会_記録_2026-02-21.md`
+18. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/specs/19_DEV-002ポリシー品質ゲート連動契約仕様.md`
+19. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/M4本判定会_記録テンプレート.md`
+20. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/M4本判定会_記録_2026-02-21.md`
 
 ## 更新ルール
 

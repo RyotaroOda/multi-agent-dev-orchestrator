@@ -69,6 +69,7 @@
 - DoRレビュー結果（2026-02-10）:
   - 充足（不足追記なし）
   - 記録: https://github.com/RyotaroOda/multi-agent-dev-orchestrator/issues/6#issuecomment-3878261847
+  - 詳細契約: `19_DEV-002ポリシー品質ゲート連動契約仕様.md`
 
 ### DEV-003 成果物完全性検証とGitHub App PR作成の接続
 
