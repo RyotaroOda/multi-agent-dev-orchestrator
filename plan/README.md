@@ -30,8 +30,9 @@
 26. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/GitHubブランチ保護監査チェックリスト.md`
 27. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/個人xマルチエージェント_日次レビュー.md`
 28. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/GitHubブランチ保護監査_2026-02-13.md`
-29. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/M4本判定会_記録_2026-02-21.md`
-30. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/M8再Go-No-Go判定_2026-02-13.md`
+29. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/GitHub保護設定_非常時運用手順.md`
+30. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/M4本判定会_記録_2026-02-21.md`
+31. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/M8再Go-No-Go判定_2026-02-13.md`
 
 ## 更新ルール
 

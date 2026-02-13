@@ -15,12 +15,57 @@ jobs:
     name: lint/format
     runs-on: ubuntu-latest
     steps:
-      - name: Lint Format Placeholder
-        run: echo "lint/format placeholder"
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Reject unresolved conflict markers
+        run: |
+          if git grep -nE '^(<<<<<<<|=======|>>>>>>>)' -- .; then
+            echo "Unresolved merge conflict markers were found."
+            exit 1
+          fi
+      - name: Validate plan README references
+        run: |
+          missing=0
+          while IFS= read -r raw_path; do
+            [ -n "$raw_path" ] || continue
+            if [[ "$raw_path" != *"/plan/"* ]]; then
+              echo "Unexpected reference format: $raw_path"
+              missing=1
+              continue
+            fi
+            rel_path="plan/${raw_path#*/plan/}"
+            if [ ! -f "$rel_path" ]; then
+              echo "Missing file referenced in plan/README.md: $rel_path"
+              missing=1
+            fi
+          done < <(sed -n 's/^[0-9][0-9]*\. `\(.*\)`/\1/p' plan/README.md)
+          [ "$missing" -eq 0 ]
 
   unit:
     name: unit test
     runs-on: ubuntu-latest
     steps:
-      - name: Unit Test Placeholder
-        run: echo "unit test placeholder"
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate ADR IDs are unique
+        run: |
+          duplicates=$(grep -oE '^## ADR-[0-9]+' plan/意思決定ログ.md | awk '{print $2}' | sort | uniq -d)
+          if [ -n "$duplicates" ]; then
+            echo "Duplicate ADR IDs were found:"
+            echo "$duplicates"
+            exit 1
+          fi
+      - name: Validate backlog IDs are unique
+        run: |
+          duplicates=$(awk -F'|' '
+            /^\| PLN-[0-9]+ / {
+              id=$2
+              gsub(/^[ \t]+|[ \t]+$/, "", id)
+              print id
+            }
+          ' plan/バックログ.md | sort | uniq -d)
+          if [ -n "$duplicates" ]; then
+            echo "Duplicate backlog IDs were found:"
+            echo "$duplicates"
+            exit 1
+          fi
