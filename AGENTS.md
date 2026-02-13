@@ -30,6 +30,18 @@
 - `gh` のデフォルトユーザー認証を常用しない。`installation token` を都度発行し、`GH_TOKEN` 指定で実行する
 - 人アカウントでのGitHub書き込みは非常時のみ許可し、理由を `plan/意思決定ログ.md` に記録する
 
+## 個人xマルチエージェント最適化ルール
+
+- 個人運用では `running` 同時Issueを最大2件に制限する
+- 24時間超の `blocked` がある場合、新規 `agent:queued` を停止し復帰判断を優先する
+- プランニング開始時は `plan/templates/個人xマルチエージェント_TaskBriefテンプレート.md` を使って `Goal/Non-goals/Acceptance/Constraints/How to Test` を先に固定する
+- セッション開始時に `目的/制約/終了条件` を明記する
+- PRレビュー前は `plan/templates/個人xマルチエージェント_PRチェックリスト.md` の全項目を確認する
+- 起動時コンテキストファイル（`AGENTS.md` / `.github/instructions` / `.github/agents`）を更新した場合は `plan/specs/21_起動時コンテキストファイル運用仕様.md` に従って台帳へ反映する
+- セッション終了時は必ず `結論/根拠/未決事項/次アクション` で記録する
+- 日次で `run_id`・`app_slug`・例外ラベル4項目・判定語彙整合を確認する
+- 日次レビューには `plan/templates/個人xマルチエージェント_日次レビュー.md` を使用する
+
 ## 企画タスクの出力フォーマット
 
 - `結論`: 今回決めたこと
