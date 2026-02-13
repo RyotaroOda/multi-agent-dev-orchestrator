@@ -97,6 +97,7 @@
 - `plan/templates/個人xマルチエージェント_PRチェックリスト.md`
 - `plan/templates/個人xマルチエージェント_日次レビュー.md`
 - `plan/templates/GitHubブランチ保護監査チェックリスト.md`
+- `plan/templates/GitHubブランチ保護自動監査結果テンプレート.md`
 
 ## 7. 未決事項
 
@@ -108,8 +109,13 @@
   - 定期監査は週1回（毎週金曜）に実施する。
   - Branch protection / required checks を変更した場合は同日中に臨時監査を実施する。
 - 監査記録:
-  - テンプレートは `plan/templates/GitHubブランチ保護監査チェックリスト.md` を使用する。
+  - 手動監査は `plan/templates/GitHubブランチ保護監査チェックリスト.md` を使用する。
+  - 自動監査は `plan/templates/GitHubブランチ保護自動監査結果テンプレート.md` を使用する。
   - 実施版は `plan/GitHubブランチ保護監査_YYYY-MM-DD.md` 形式で保存する。
+- 監査実行主体:
+  - 標準はAI監査（詳細は `plan/specs/22_AI監査自動化運用仕様.md`）を適用する。
+  - 実装単位（Collector/Evaluator/Reporter/Dispatcher）は `plan/specs/23_AI監査ジョブ実装詳細仕様.md` を参照する。
+  - 例外許可の妥当性判断とリスク受容判断は Integrator（人間）が最終承認する。
 - 台帳反映:
   - 差分なし: `plan/リスク登録簿.md` の監視指標のみ更新する。
   - 差分あり: `plan/バックログ.md` に是正タスク追加、必要時 `plan/意思決定ログ.md` にADR追記する。
