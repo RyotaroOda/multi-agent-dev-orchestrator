@@ -23,15 +23,21 @@
 19. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/specs/19_個人xマルチエージェント運用最適化仕様.md`
 20. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/specs/20_GitHub前提コミットPRマージ完了運用仕様.md`
 21. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/specs/21_起動時コンテキストファイル運用仕様.md`
-22. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/個人xマルチエージェント_TaskBriefテンプレート.md`
-23. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/個人xマルチエージェント_PRチェックリスト.md`
-24. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/M4本判定会_記録テンプレート.md`
-25. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/M8再Go-No-Go入力テンプレート.md`
-26. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/GitHubブランチ保護監査チェックリスト.md`
-27. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/個人xマルチエージェント_日次レビュー.md`
-28. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/GitHubブランチ保護監査_2026-02-13.md`
-29. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/M4本判定会_記録_2026-02-21.md`
-30. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/M8再Go-No-Go判定_2026-02-13.md`
+22. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/specs/22_AI監査自動化運用仕様.md`
+23. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/specs/23_AI監査ジョブ実装詳細仕様.md`
+24. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/specs/24_開発環境構築仕様.md`
+25. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/AI監査ジョブ実装_TaskBrief.md`
+26. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/個人xマルチエージェント_TaskBriefテンプレート.md`
+27. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/個人xマルチエージェント_PRチェックリスト.md`
+28. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/M4本判定会_記録テンプレート.md`
+29. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/M8再Go-No-Go入力テンプレート.md`
+30. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/GitHubブランチ保護監査チェックリスト.md`
+31. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/GitHubブランチ保護自動監査結果テンプレート.md`
+32. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/templates/個人xマルチエージェント_日次レビュー.md`
+33. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/GitHubブランチ保護監査_2026-02-13.md`
+34. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/GitHub保護設定_非常時運用手順.md`
+35. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/M4本判定会_記録_2026-02-21.md`
+36. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/M8再Go-No-Go判定_2026-02-13.md`
 
 ## 更新ルール
 
