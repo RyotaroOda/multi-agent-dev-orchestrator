@@ -1,0 +1,26 @@
+name: required-checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: required-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: lint/format
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint Format Placeholder
+        run: echo "lint/format placeholder"
+
+  unit:
+    name: unit test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Unit Test Placeholder
+        run: echo "unit test placeholder"
