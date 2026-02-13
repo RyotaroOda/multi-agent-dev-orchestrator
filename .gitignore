@@ -7,3 +7,9 @@ plan/templates/GitHub App設定値記録.local.md
 
 # Local key material
 keys/
+
+# Local runtime artifacts
+var/
+
+# macOS metadata
+.DS_Store
