@@ -2,6 +2,8 @@
 
 ## 読む順番
 
+- 進捗を先に確認する場合: `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/実装進捗ダッシュボード.md`
+
 1. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/企画書.md`
 2. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/エージェント.md`
 3. `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/マイルストーン.md`

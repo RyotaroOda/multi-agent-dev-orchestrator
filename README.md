@@ -9,6 +9,35 @@
 - 企画で決まった内容は `plan/` に必ず反映
 - 1つの論点を1つのIssueで扱い、同時に複数論点を混ぜない
 
+## 開発環境構築（アプリ実装とは分離）
+
+開発環境の初期化とチェックは `scripts/` で実行できます。
+
+```bash
+# 初期化のみ（.env テンプレート作成、ディレクトリ作成）
+make dev-env-init
+
+# 必須コマンド/環境変数チェック
+make dev-env-check
+
+# 初期化 + チェック
+make dev-env-setup
+
+# GitHub監査設定の収集
+make audit-collect
+
+# 収集結果の評価
+make audit-evaluate
+
+# レポート生成
+make audit-report
+
+# 通知・台帳更新案生成
+make audit-dispatch
+```
+
+詳細: `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/scripts/README.md`
+
 ## ドキュメント導線
 
 - 企画の全体像: `/Users/ryotarooda/Desktop/マルチエージェント開発ツール/plan/企画書.md`
