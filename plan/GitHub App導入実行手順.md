@@ -34,6 +34,20 @@
 2. テストPR本文に `run_id` と `app_slug` を記載する。
 3. Issue #3 に PR URL、結果、失敗時理由をコメントする。
 
+## 2.3 他エージェント共通セットアップ（bot主体）
+
+1. 設定値を確認する。
+   - `plan/templates/GitHub App設定値記録.local.md`
+   - 必須項目: `App slug` / `App ID` / `Installation ID`
+2. 秘密鍵の保管先を確認する。
+   - 例: `keys/multi-agent-orchestrator-bot.<date>.private-key.pem`
+3. `installation token` を都度発行し、`GH_TOKEN` で `gh` を実行する。
+   - `gh` のデフォルト認証は使わない。
+   - token をファイルへ永続保存しない（必要時のみメモリ保持）。
+4. PR作成後に author が bot であることを確認する。
+   - 期待値: `app/multi-agent-orchestrator-bot`
+5. 失敗時は `blocked` とし、原因（権限不足 / token発行失敗 / 鍵失効）を Issue コメントへ記録する。
+
 ## 3. 記録先
 
 - 方針/決定: `plan/意思決定ログ.md`
